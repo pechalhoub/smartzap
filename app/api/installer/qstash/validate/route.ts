@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
 
     // Validar token fazendo uma requisição de listagem de schedules
     // Endpoint US-East-1 (região obrigatória — outras regiões não são compatíveis)
-    const qstashRes = await fetch('https://qstash-us-east-1.upstash.io/v2/schedules', {
+    const qstashRes = await fetch('https://qstash.upstash.io/v2/schedules', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,
